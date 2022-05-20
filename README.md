@@ -18,10 +18,14 @@ The input file should be an meta4/xml file generated from 'https://scihub.copern
 ```
 In download.py, replace the 'path_to_sdk' with the gsutil path present in the bin directory of google-cloud-sdk.
 
-Usage: python download.py [-f] [-filename] [-v] [--verbose]
+Usage: python downloader.py [-h] [-f FILENAME] [-v VERBOSE]
 
 Available commands:
 
-  filename      Filename of the xml containing all the product IDs. Can be downloaded from 'https://scihub.copernicus.eu/dhus/#/home'
-  verbose       Verbose level. (True/False)
+  -h, --help                  show this help message and exit
+  -f FILENAME, --filename     FILENAME
+                              Filename of the xml containing all the product IDs. Can be downloaded from
+                              'https://scihub.copernicus.eu/dhus/#/home'
+  -v VERBOSE, --verbose       VERBOSE
+                              Verbose level.
 ```
